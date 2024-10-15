@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:48:46 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/14 22:52:21 by iarslan          ###   ########.fr       */
+/*   Created: 2024/10/14 22:23:16 by iarslan           #+#    #+#             */
+/*   Updated: 2024/10/14 22:38:22 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-char	*ft_strdup(const char *s1)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*final;
-	int		len;
-	int		i;
+	char *final;
+	int i;
+	int j;
+	int s1size;
+	int s2size;
 
 	i = 0;
-	len = ft_strlen(s1);
-	final = malloc(sizeof(char) * (len + 1));
+	j = 0;
+	s1size = ft_strlen(s1);
+	s2size = ft_strlen(s2);
+	final = malloc(sizeof(char) * (s1size + s2size + 1));
 	if (!final)
 		return (NULL);
 	while (s1[i])
-	{
-		final[i] = s1[i];
-		i++;
-	}
-	final[i] = '\0';
+		final[j++] = s1[i++];
+	i = 0;
+	while (s2[i])
+		final[j++] = s2[i++];
+	final[j] = '\0';
 	return (final);
 }

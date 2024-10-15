@@ -6,13 +6,13 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:50:07 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/13 17:57:08 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/14 23:00:35 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (c <= 90 && c >= 65)
 		c = c + 32;

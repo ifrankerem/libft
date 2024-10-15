@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 18:48:46 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/14 22:52:21 by iarslan          ###   ########.fr       */
+/*   Created: 2024/10/15 21:46:47 by iarslan           #+#    #+#             */
+/*   Updated: 2024/10/15 23:02:34 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+#include "unistd.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_putstr_fd(char *s, int fd)
 {
-	char	*final;
-	int		len;
-	int		i;
+	int	i;
 
 	i = 0;
-	len = ft_strlen(s1);
-	final = malloc(sizeof(char) * (len + 1));
-	if (!final)
-		return (NULL);
-	while (s1[i])
+	while (s[i])
 	{
-		final[i] = s1[i];
+		write(fd, &s[i], 1);
 		i++;
 	}
-	final[i] = '\0';
-	return (final);
 }
