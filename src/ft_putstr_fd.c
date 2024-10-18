@@ -24,7 +24,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-int main()
-{
-	ft_putstr_fd("merhaba",1);
-}
