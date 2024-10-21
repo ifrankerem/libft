@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:18:28 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/21 19:23:07 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/21 19:23:50 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,4 @@ char	*ft_itoa(int n)
 	}
 	final[digitnmbr] = nlong + '0';
 	return (final);
-}
-int main()
-{
-	printf("%s",ft_itoa(7));
 }
