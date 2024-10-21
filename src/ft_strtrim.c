@@ -6,14 +6,14 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 22:39:41 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/15 18:34:16 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/16 00:54:24 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int	ft_find(char *set, char s1)
+static int	ft_find(char *set, char s1)
 {
 	int	i;
 

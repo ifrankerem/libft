@@ -6,14 +6,14 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:18:28 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/15 21:05:01 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/16 00:53:21 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int	nbrlen(long x)
+static int	nbrlen(long x)
 {
 	int	len;
 

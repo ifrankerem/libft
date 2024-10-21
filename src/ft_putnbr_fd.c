@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 23:11:09 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/15 23:29:45 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/16 00:53:41 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,4 @@ void	ft_putnbr_fd(int n, int fd)
 		x = number + '0';
 		write(fd, &x, 1);
 	}
-}
-int	main(void)
-{
-	ft_putnbr_fd(-123, 1);
 }
