@@ -42,10 +42,12 @@ char **ft_copy(char const *s, char c)
 	int k;
 	j = 0;
 	int size;
+	int wordnumber;
+	wordnumber =  ft_wordcount(s, c);
 	int 
 	i = 0;
 	size = ft_alphcount(s,c);
-	*final = malloc(sizeof(char) * (size +1));
+	*final = malloc(sizeof(char) * (size +wordnumber));
 	while(s[i])
 	{	
 		j = 0;
