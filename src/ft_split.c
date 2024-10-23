@@ -13,24 +13,7 @@
 #include "libft.h"
 #include <stdio.h>
 
-char **ft_copy(char **final,char const *s, char c)
-{
-    int i;
-    int j;
-    int size;
-	int wordnumber;
-    size = ft_alphcount(&s,c);
-	wordnumber = ft_wordcount(s);
-    i = 0;
-    while(final[i] == c)
-        i++;
-    final = malloc(sizeof(char)*size + wordnumber);
-    while(s[i])
-    {
-        
-    }
-}
-int	ft_alphcount(char *x, char y)
+int	ft_alphcount(char const *x, char y)
 {
 	int	i;
 	int	flag;
@@ -51,7 +34,34 @@ int	ft_alphcount(char *x, char y)
 	}
 	return (flag);
 }
-int	ft_wordcount(char *x, char y)
+char **ft_copy(char const *s, char c)
+{
+	char **final;
+	int i;
+	int j;
+	int k;
+	j = 0;
+	int size;
+	int 
+	i = 0;
+	size = ft_alphcount(s,c);
+	*final = malloc(sizeof(char) * (size +1));
+	while(s[i])
+	{	
+		j = 0;
+		while(s[i] == c)
+		{	
+			final[k][j] = s[i];
+			i++;
+			j++;
+		}
+		final[k][j] = '\0';
+		k++;
+	}
+	return(final);
+}
+
+int	ft_wordcount(char const *x, char y)
 {
 	int	i;
 	int	flag;
@@ -70,7 +80,20 @@ char	**ft_split(char const *s, char c)
 {
 	char **final;
 	int wordcount;
-	wordcount = ft_wordcount(&s, c);
+	wordcount = ft_wordcount(s, c);
 	*final = malloc(sizeof(char *) * wordcount);
-    ft_copy
+    final = ft_copy(s,c);
+	return(final);
+}
+int main()
+{	
+	int i;
+	i = 0;
+	char *x = "42 turkiye naber";
+	char **y = ft_split(x,' ');
+	while(y[i])
+	{
+		printf("%s\n",y[i]);
+		i++;
+	}
 }
