@@ -1,0 +1,1018 @@
+ft_lstiter.c: OK!
+ft_lstlast.c: OK!
+ft_lstmap.c: OK!
+ft_lstnew.c: OK!
+ft_lstsize.c: OK!
+ft_memchr.c: OK!
+ft_memcmp.c: OK!
+ft_memcpy.c: Error!
+Error: BRACE_SHOULD_EOL     (line:  34, col:   1):      Expected newline after brace
+ft_memmove.c: OK!
+ft_memset.c: OK!
+ft_putchar_fd.c: OK!
+ft_putendl_fd.c: OK!
+ft_putnbr_fd.c: OK!
+ft_putstr_fd.c: OK!
+ft_split.c: OK!
+ft_strchr.c: OK!
+ft_strdup.c: OK!
+ft_striteri.c: OK!
+ft_strjoin.c: OK!
+ft_strlcat.c: OK!
+ft_strlcpy.c: OK!
+ft_strlen.c: OK!
+ft_strmapi.c: OK!
+ft_strncmp.c: OK!
+ft_strnstr.c: OK!
+ft_strrchr.c: OK!
+ft_strtrim.c: OK!
+ft_substr.c: OK!
+ft_tolower.c: OK!
+ft_toupper.c: OK!
+libft.h: OK!
+
+✔ Executing: make fclean all bonus
+ℹ Executing: libft-war-machine (https://github.com/y3ll0w42/libft-war-machine)
+--------------------------------------------------------------------------------
+|                              COMPILING LIBFT                                 |
+--------------------------------------------------------------------------------
+rules:
+all        $(NAME)       fclean       re           clean       bonus     libft.a
+ok         ok            ok           ok           ok          ok        found
+
+FUNCTION         TESTS                RESULT
+ft_isalpha       ✓✓✓✓✓✓✓              OK
+ft_isdigit       ✓✓✓✓✓✓✓              OK
+ft_isalnum       ✓✓✓✓✓✓✓              OK
+ft_isascii       ✓✓✓✓✓✓✓✓             OK
+ft_isprint       ✓✓✓✓✓✓✓              OK
+ft_strlen        ✓✓✓✓✓✓               OK
+ft_memset        ✓✓✓✓                 OK
+ft_bzero         ✓✓                   OK
+ft_memcpy        ✓✓✓                  OK
+ft_memmove       ✓✓✓✓✓                OK
+ft_strlcpy       ✓✓✓✓✓                OK
+ft_strlcat       ✓✓✓✓✓✓✓✓✓            OK
+ft_toupper       ✓✓✓✓✓✓✓              OK
+ft_tolower       ✓✓✓✓✓✓✓              OK
+ft_strchr        ✓✓✓✓✓✓               OK
+ft_strrchr       ✓✓✓✓✓✓✓✓             OK
+ft_strncmp       ✓✗✓✓✗✓✓✓✓✓✓          KO
+ft_memchr        ✓✓✓✓✓✓               OK
+ft_memcmp        ✓✓✓✓✓✓✓✓✓            OK
+ft_strnstr       ✓✓✓✓✓✓✓✓✓✓           OK
+ft_atoi          ✓✓✓✓✓✓✓✓✓✓✓✓✗✓✓✓✓✓✓  KO
+ft_calloc        ✓                    OK
+ft_strdup        ✓                    OK
+ft_substr        ✓✓✓✓✗                KO
+ft_strjoin       ✓✓✓✓                 OK
+ft_strtrim       ✓✓✓✓✓                OK
+ft_split         compil. failed       KO
+ft_itoa          ✓✓✓✓✓✓✓✓✓✓           OK
+ft_strmapi       ✓                    OK
+ft_striteri      ✓                    OK
+ft_putchar_fd    ✓✓✓✓✓✓✓              OK
+ft_putstr_fd     ✓✓✓✓                 OK
+ft_putendl_fd    ✓✓✓✓                 OK
+ft_putnbr_fd     ✓✓✓✓✓✓✓✓✗            KO
+ft_lstnew        ✓✓✓                  OK
+ft_lstadd_front  ✓                    OK
+ft_lstsize       ✓                    OK
+ft_lstlast       ✓                    OK
+ft_lstdelone     ✓                    OK
+ft_lstclear      ✓                    OK
+ft_lstiter       ✓                    OK
+ft_lstmap        compil. failed       KO
+
+Abort: A  Bus error: B  Segmentation fault: S  Timeout: T
+
+More information in: /Users/iarslan/francinette/temp/libft/war-machine/deepthought
+
+Errors in strncmp: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part1_functions/ft_strncmp
+Test 2:
+    ft_print_result(ft_strncmp("test", "testss", 7));
+Expected (cat -e test02.output):
+-1
+Your result (cat -e user_output_test02):
+1
+Test 5:
+    ft_print_result(ft_strncmp("", "test", 4));
+Expected (cat -e test05.output):
+-1
+Your result (cat -e user_output_test05):
+1
+Errors in atoi: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part1_functions/ft_atoi
+Test 13:
+    ft_print_result(ft_atoi("\e475"));
+Expected (cat -e test13.output):
+0
+Your result (cat -e user_output_test13):
+475
+Errors in substr: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part2_functions/ft_substr
+Test 5:
+    char *bullshit;
+    if (!(strsub = ft_substr(str, 400, 20)))
+        ft_print_result("NULL");
+    else
+    {
+        bullshit = (char *)&strsub[30];
+        bullshit = "FULL BULLSHIT";
+        if (strsub)
+            ft_print_result(strsub);
+        else
+            ft_print_result("rip");
+    }
+    if (str == strsub)
+        ft_print_result("\nA new string was not returned");
+    (void)bullshit;
+Expected (cat -e test05.output):
+
+Your result (cat -e user_output_test05):
+\xeaM-^J\xf5\xe2\xfe^?
+Errors in putnbr_fd: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part2_functions/ft_putnbr_fd
+Test 9:
+    ft_putnbr_fd(-2147483648LL, 2);
+Expected (cat -e test09.output):
+-2147483648
+Your result (cat -e user_output_test09):
+--214748364-8
+✖ Compiling tests: libftTester (https://github.com/Tripouille/libftTester)
+In file included from tests/ft_isalpha_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_isdigit_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_isalnum_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_isascii_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_isprint_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strlen_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_memset_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_bzero_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_memcpy_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_memmove_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strlcpy_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+tests/ft_strlcpy_test.cpp:21:16: error: no matching function for call to 'ft_strlcpy'
+        /* 1 */ check(ft_strlcpy(dest, src, 0) == strlen(src) && dest[0] == 'A'); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:22:16: error: no matching function for call to 'ft_strlcpy'
+        /* 2 */ check(ft_strlcpy(dest, src, 1) == strlen(src) && dest[0] == 0 && dest[1] == 'A'); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:23:16: error: no matching function for call to 'ft_strlcpy'
+        /* 3 */ check(ft_strlcpy(dest, src, 2) == strlen(src) && dest[0] == 'c' && dest[1] == 0  && dest[2] == 'A'); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:24:16: error: no matching function for call to 'ft_strlcpy'
+        /* 4 */ check(ft_strlcpy(dest, src, -1) == strlen(src) && !strcmp(src, dest) && dest[strlen(src) + 1] == 'A'); showLeaks(); memset(dest, 'A', 10);
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:25:16: error: no matching function for call to 'ft_strlcpy'
+        /* 5 */ check(ft_strlcpy(dest, src, 6) == strlen(src) && !memcmp(src, dest, 5) && dest[5] == 0); showLeaks(); memset(dest, 'A', 10);
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:26:16: error: no matching function for call to 'ft_strlcpy'
+        /* 6 */ check(ft_strlcpy(dest, src, 7) == strlen(src) && !memcmp(src, dest, 7)); showLeaks(); memset(dest, 'A', 10);
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:27:16: error: no matching function for call to 'ft_strlcpy'
+        /* 7 */ check(ft_strlcpy(dest, src, 8) == strlen(src) && !memcmp(src, dest, 7)); showLeaks(); memset(dest, 'A', 10);
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:28:16: error: no matching function for call to 'ft_strlcpy'
+        /* 8 */ check(ft_strlcpy(dest, "", 42) == 0 && !memcmp("", dest, 1)); showLeaks(); memset(dest, 0, 10);
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcpy_test.cpp:29:16: error: no matching function for call to 'ft_strlcpy'
+        /* 9 */ check(ft_strlcpy(dest, "1", 0) == 1 && dest[0] == 0); showLeaks(); memset(dest, 'A', 10);
+                      ^~~~~~~~~~
+./libft.h:52:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                ^
+11 errors generated.
+In file included from tests/ft_strlcat_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+tests/ft_strlcat_test.cpp:22:16: error: no matching function for call to 'ft_strlcat'
+        /* 1 */ check(ft_strlcat(dest, src, 0) == strlen(src) && !strcmp(dest, "B")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:24:16: error: no matching function for call to 'ft_strlcat'
+        /* 2 */ check(ft_strlcat(dest, src, 1) == 10 && !strcmp(dest, "B")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:26:16: error: no matching function for call to 'ft_strlcat'
+        /* 3 */ check(ft_strlcat(dest, src, 3) == 3 + strlen(src) && !strcmp(dest, "BBBB")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:27:16: error: no matching function for call to 'ft_strlcat'
+        /* 4 */ check(ft_strlcat(dest, src, 6) == 13 && !strcmp(dest, "BBBBA")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:29:16: error: no matching function for call to 'ft_strlcat'
+        /* 5 */ check(ft_strlcat(dest, src, -1) == 14 && !strcmp(dest, "CCCCCAAAAAAAAA")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:31:16: error: no matching function for call to 'ft_strlcat'
+        /* 6 */ check(ft_strlcat(dest, src, 17) == 24 && !strcmp(dest, "CCCCCCCCCCCCCCCA")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:33:16: error: no matching function for call to 'ft_strlcat'
+        /* 7 */ check(ft_strlcat(dest, src, 1) == strlen(src) && !strcmp(dest, "")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:35:16: error: no matching function for call to 'ft_strlcat'
+        /* 8 */ check(ft_strlcat(dest, src, 5) == strlen(src) + 5 && !strcmp(dest, "1111111111")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:37:16: error: no matching function for call to 'ft_strlcat'
+        /* 9 */ check(ft_strlcat(dest, src, 5) == strlen(src) + 5 && !strcmp(dest, "1111111111")); showLeaks();
+                      ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:39:17: error: no matching function for call to 'ft_strlcat'
+        /* 10 */ check(ft_strlcat(dest, "", 15) == 10 && !strcmp(dest, "1111111111")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:41:17: error: no matching function for call to 'ft_strlcat'
+        /* 11 */ check(ft_strlcat(dest, "", 42) == 0 && !strcmp(dest, "")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:43:17: error: no matching function for call to 'ft_strlcat'
+        /* 12 */ check(ft_strlcat(dest, "", 0) == 0 && !strcmp(dest, "")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:45:17: error: no matching function for call to 'ft_strlcat'
+        /* 13 */ check(ft_strlcat(dest, "123", 1) == 3 && !strcmp(dest, "")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:47:17: error: no matching function for call to 'ft_strlcat'
+        /* 14 */ check(ft_strlcat(dest, "123", 2) == 3 && !strcmp(dest, "1")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:49:17: error: no matching function for call to 'ft_strlcat'
+        /* 15 */ check(ft_strlcat(dest, "123", 3) == 3 && !strcmp(dest, "12")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:51:17: error: no matching function for call to 'ft_strlcat'
+        /* 16 */ check(ft_strlcat(dest, "123", 4) == 3 && !strcmp(dest, "123")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+tests/ft_strlcat_test.cpp:53:17: error: no matching function for call to 'ft_strlcat'
+        /* 17 */ check(ft_strlcat(dest, "123", 0) == 3 && !strcmp(dest, "")); showLeaks();
+                       ^~~~~~~~~~
+./libft.h:50:11: note: candidate function not viable: requires single argument 'restrict', but 3 arguments were provided
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                ^
+19 errors generated.
+In file included from tests/ft_toupper_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_tolower_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strchr_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strrchr_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strncmp_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_memchr_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_memcmp_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strnstr_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_atoi_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_calloc_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strdup_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_substr_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strjoin_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strtrim_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_split_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_itoa_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_strmapi_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_striteri_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_putchar_fd_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_putstr_fd_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_putendl_fd_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_putnbr_fd_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstnew_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstadd_front_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstsize_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstlast_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstdelone_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstclear_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstiter_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+In file included from tests/ft_lstmap_test.cpp:4:
+./libft.h:50:37: error: expected ')'
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:50:21: note: to match this '('
+size_t                          ft_strlcat(char *restrict dst, const char *restrict src,
+                                          ^
+./libft.h:52:37: error: expected ')'
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                                          ^
+./libft.h:52:21: note: to match this '('
+size_t                          ft_strlcpy(char *restrict dst, const char *restrict src,
+                                          ^
+2 errors generated.
+
+Problem compiling tests
+✔ Compiling tests: libft-unit-test (https://github.com/alelievr/libft-unit-test)
+ℹ Testing:
+ft_isalpha      : [OK] 
+ft_isdigit      : [OK] 
+ft_isalnum      : [OK] 
+ft_isascii      : [OK] 
+ft_isprint      : [OK] 
+ft_strlen       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memset       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_bzero        : [OK] [OK] [OK] [OK] 
+ft_memcpy       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] [NO CRASH] [OK] [OK] 
+[no crash]: your memcpy does not segv with NULL on first params
+[no crash]: your memcpy does not segv with NULL on second params
+
+ft_memmove      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcpy      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcat      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_toupper      : [OK] 
+ft_tolower      : [OK] 
+ft_strchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strrchr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncmp      : [FAILED] [FAILED] [OK] [OK] [OK] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] 
+[fail]: your strncmp does not work with basic input
+[fail]: your strncmp does not work with basic input
+[fail]: your strncmp does not work with zero length string
+[fail]: your strncmp does not work with basic input
+
+ft_memchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memcmp       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strnstr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_atoi         : [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+[fail]: your atoi is not working with non space invisible char
+
+ft_calloc       : [OK] [OK] [OK] [OK] [OK] 
+ft_strdup       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_substr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] 
+[fail]: your substr does not work when start >= ft_strlen(s)
+
+ft_strjoin      : [OK] [OK] [OK] [OK] [OK] 
+ft_strtrim      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_split        : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_itoa         : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strmapi      : [OK] [OK] [OK] [OK] [OK] 
+ft_striteri     : [OK] [OK] 
+ft_putchar_fd   : [OK] [OK] 
+ft_putstr_fd    : [OK] [OK] 
+ft_putendl_fd   : [OK] [OK] 
+ft_putnbr_fd    : [OK] [OK] [FAILED] [OK] [FAILED] 
+[fail]: your putnbr_fd does not work with int min
+[fail]: your putnbr_fd allocate memory, wtf ???
+
+ft_lstnew       : [OK] [OK] [OK] [OK] 
+ft_lstadd_front : [OK] [OK] [OK] 
+ft_lstsize      : [OK] [OK] 
+ft_lstlast      : [OK] [OK] 
+ft_lstdelone    : [OK] 
+ft_lstclear     : [OK] [OK] [OK] 
+ft_lstiter      : [OK] 
+ft_lstmap       : [MISSING]
+
+[no crash]: your memcpy does not segv with NULL on first params
+ Test code:
+        ft_memcpy(((void *)0), "segfaulter tu dois", 17);
+ 
+ 
+ [no crash]: your memcpy does not segv with NULL on second params
+ Test code:
+        ft_memcpy("            ", ((void *)0), 17);
+ 
+ 
+ [fail]: your strncmp does not work with basic input
+ Test code:
+        char *s1 = "the cake is a lie !\0I'm hidden lol\r\n";
+        char *s2 = "there is no stars in the sky";
+        size_t size = strlen("the cake is a lie !\0I'm hidden lol\r\n");
+        int i1 = ((strncmp(s1, s2, size) > 0) ? 1 : ((strncmp(s1, s2, size) < 0) ? -1 : 0));
+        int i2 = ((ft_strncmp(s1, s2, size) > 0) ? 1 : ((ft_strncmp(s1, s2, size) < 0) ? -1 : 0));
+ 
+        if (i1 == i2)
+                exit(TEST_SUCCESS);
+        exit(TEST_FAILED);
+ 
+ Diffs:
+      strncmp: |-1|
+   ft_strncmp: |1|
+ 
+ [fail]: your strncmp does not work with basic input
+ Test code:
+        char *s1 = "omg1||||||||||||||||";
+        char *s2 = "omg3";
+        size_t size = 4;
+        int i1 = ((strncmp(s1, s2, size) > 0) ? 1 : ((strncmp(s1, s2, size) < 0) ? -1 : 0));
+        int i2 = ((ft_strncmp(s1, s2, size) > 0) ? 1 : ((ft_strncmp(s1, s2, size) < 0) ? -1 : 0));
+ 
+        if (i1 == i2)
+                exit(TEST_SUCCESS);
+        exit(TEST_FAILED);
+ 
+ Diffs:
+      strncmp: |-1|
+   ft_strncmp: |1|
+ 
+ [fail]: your strncmp does not work with zero length string
+ Test code:
+        char *s1 = "";
+        char *s2 = "AAAAAA";
+        int i1 = ((strncmp(s1, s2, 6) > 0) ? 1 : ((strncmp(s1, s2, 6) < 0) ? -1 : 0));
+        int i2 = ((ft_strncmp(s1, s2, 6) > 0) ? 1 : ((ft_strncmp(s1, s2, 6) < 0) ? -1 : 0));
+ 
+        if (i1 == i2)
+...
+
+File too large. To see full report open: /Users/iarslan/francinette/temp/libft/alelievr/result.log
+
+✖ Compiling tests: fsoares (my own)
+duplicate symbol '_main' in:
+    /var/folders/zz/zyxvpxvq6csfxvn_n000cw4c003713/T/test_split-409fcc.o
+    ./libft.a(ft_split.o)
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Problem compiling the tests
+
+Summary: 
+
+Norminette Errors: ft_memcpy.c
+
+Missing functions: lstadd_back
+
+Failed tests: memcpy, substr, lstmap, libftTester, atoi, strncmp, fsoares, putnbr_fd
+
+Passed tests: isalpha, isdigit, isalnum, isascii, isprint, strlen, memset, bzero, memmove, strlcpy, strlcat, toupper, tolower, strchr, strrchr, memchr, memcmp, strnstr, calloc, strdup, strjoin, strtrim, split, itoa, strmapi, striteri, putchar_fd, putstr_fd, putendl_fd, lstnew, lstadd_front, lstsize, lstlast, lstdelone, lstclear, lstiter
+iarslan@k1m21s05 src % 
