@@ -6,12 +6,11 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:43:23 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/27 02:44:15 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/27 02:53:09 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_wordcount(char const *x, char y)
 {

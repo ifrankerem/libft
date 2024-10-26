@@ -6,12 +6,11 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 18:48:46 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/14 22:52:21 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/27 02:53:05 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strdup(const char *s1)
 {
