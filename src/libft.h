@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:28:35 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/26 16:32:04 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/27 02:48:24 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,8 @@ void				*ft_memset(void *s, int c, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s1);
 char				*ft_strjoin(char const *s1, char const *s2);
-size_t				ft_strlcat(char *restrict dst, const char *restrict src,
-						size_t dstsize);
-size_t				ft_strlcpy(char *restrict dst, const char *restrict src,
-						size_t dstsize);
+size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlen(const char *s);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strnstr(const char *haystack, const char *needle,

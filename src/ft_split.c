@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:43:23 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/26 16:34:27 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/27 02:44:15 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,20 +77,4 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	return (ft_copy(s, c));
-}
-
-int	main(void)
-{
-	int		i;
-	char	*x;
-	char	**y;
-
-	i = 0;
-	x = "42 turkiye naber";
-	y = ft_split(x, ' ');
-	while (y[i])
-	{
-		printf("%s\n", y[i]);
-		i++;
-	}
 }
