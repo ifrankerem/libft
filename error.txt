@@ -1,36 +1,10 @@
-ft_lstiter.c: OK!
-ft_lstlast.c: OK!
-ft_lstmap.c: OK!
-ft_lstnew.c: OK!
-ft_lstsize.c: OK!
-ft_memchr.c: OK!
-ft_memcmp.c: OK!
-ft_memcpy.c: Error!
-Error: BRACE_SHOULD_EOL     (line:  34, col:   1):      Expected newline after brace
-ft_memmove.c: OK!
-ft_memset.c: OK!
-ft_putchar_fd.c: OK!
-ft_putendl_fd.c: OK!
-ft_putnbr_fd.c: OK!
-ft_putstr_fd.c: OK!
-ft_split.c: OK!
-ft_strchr.c: OK!
-ft_strdup.c: OK!
-ft_striteri.c: OK!
-ft_strjoin.c: OK!
-ft_strlcat.c: OK!
-ft_strlcpy.c: OK!
-ft_strlen.c: OK!
-ft_strmapi.c: OK!
-ft_strncmp.c: OK!
-ft_strnstr.c: OK!
-ft_strrchr.c: OK!
-ft_strtrim.c: OK!
-ft_substr.c: OK!
-ft_tolower.c: OK!
-ft_toupper.c: OK!
-libft.h: OK!
-
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                Welcome to Francinette, a 42 tester framework!                ║
+╚═══════════════════════╦══════════════════════════════╦═══════════════════════╝
+                        ║             libft            ║
+                        ╚══════════════════════════════╝
+✔ Preparing framework
+✔ Executing: norminette
 ✔ Executing: make fclean all bonus
 ℹ Executing: libft-war-machine (https://github.com/y3ll0w42/libft-war-machine)
 --------------------------------------------------------------------------------
@@ -57,14 +31,14 @@ ft_toupper       ✓✓✓✓✓✓✓              OK
 ft_tolower       ✓✓✓✓✓✓✓              OK
 ft_strchr        ✓✓✓✓✓✓               OK
 ft_strrchr       ✓✓✓✓✓✓✓✓             OK
-ft_strncmp       ✓✗✓✓✗✓✓✓✓✓✓          KO
+ft_strncmp       ✓✓✓✓✓✓✓✓✓✓✓          OK
 ft_memchr        ✓✓✓✓✓✓               OK
 ft_memcmp        ✓✓✓✓✓✓✓✓✓            OK
 ft_strnstr       ✓✓✓✓✓✓✓✓✓✓           OK
-ft_atoi          ✓✓✓✓✓✓✓✓✓✓✓✓✗✓✓✓✓✓✓  KO
+ft_atoi          ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓  OK
 ft_calloc        ✓                    OK
 ft_strdup        ✓                    OK
-ft_substr        ✓✓✓✓✗                KO
+ft_substr        ✓✓✓✓✓                OK
 ft_strjoin       ✓✓✓✓                 OK
 ft_strtrim       ✓✓✓✓✓                OK
 ft_split         compil. failed       KO
@@ -74,7 +48,7 @@ ft_striteri      ✓                    OK
 ft_putchar_fd    ✓✓✓✓✓✓✓              OK
 ft_putstr_fd     ✓✓✓✓                 OK
 ft_putendl_fd    ✓✓✓✓                 OK
-ft_putnbr_fd     ✓✓✓✓✓✓✓✓✗            KO
+ft_putnbr_fd     ✓✓✓✓✓✓✓✓✓            OK
 ft_lstnew        ✓✓✓                  OK
 ft_lstadd_front  ✓                    OK
 ft_lstsize       ✓                    OK
@@ -84,58 +58,6 @@ ft_lstclear      ✓                    OK
 ft_lstiter       ✓                    OK
 ft_lstmap        compil. failed       KO
 
-Abort: A  Bus error: B  Segmentation fault: S  Timeout: T
-
-More information in: /Users/iarslan/francinette/temp/libft/war-machine/deepthought
-
-Errors in strncmp: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part1_functions/ft_strncmp
-Test 2:
-    ft_print_result(ft_strncmp("test", "testss", 7));
-Expected (cat -e test02.output):
--1
-Your result (cat -e user_output_test02):
-1
-Test 5:
-    ft_print_result(ft_strncmp("", "test", 4));
-Expected (cat -e test05.output):
--1
-Your result (cat -e user_output_test05):
-1
-Errors in atoi: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part1_functions/ft_atoi
-Test 13:
-    ft_print_result(ft_atoi("\e475"));
-Expected (cat -e test13.output):
-0
-Your result (cat -e user_output_test13):
-475
-Errors in substr: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part2_functions/ft_substr
-Test 5:
-    char *bullshit;
-    if (!(strsub = ft_substr(str, 400, 20)))
-        ft_print_result("NULL");
-    else
-    {
-        bullshit = (char *)&strsub[30];
-        bullshit = "FULL BULLSHIT";
-        if (strsub)
-            ft_print_result(strsub);
-        else
-            ft_print_result("rip");
-    }
-    if (str == strsub)
-        ft_print_result("\nA new string was not returned");
-    (void)bullshit;
-Expected (cat -e test05.output):
-
-Your result (cat -e user_output_test05):
-\xeaM-^J\xf5\xe2\xfe^?
-Errors in putnbr_fd: /Users/iarslan/francinette/temp/libft/war-machine/tests/Part2_functions/ft_putnbr_fd
-Test 9:
-    ft_putnbr_fd(-2147483648LL, 2);
-Expected (cat -e test09.output):
--2147483648
-Your result (cat -e user_output_test09):
---214748364-8
 ✖ Compiling tests: libftTester (https://github.com/Tripouille/libftTester)
 In file included from tests/ft_isalpha_test.cpp:4:
 ./libft.h:50:37: error: expected ')'
@@ -893,10 +815,7 @@ ft_isprint      : [OK]
 ft_strlen       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memset       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_bzero        : [OK] [OK] [OK] [OK] 
-ft_memcpy       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] [NO CRASH] [OK] [OK] 
-[no crash]: your memcpy does not segv with NULL on first params
-[no crash]: your memcpy does not segv with NULL on second params
-
+ft_memcpy       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memmove      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strlcpy      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strlcat      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
@@ -904,23 +823,14 @@ ft_toupper      : [OK]
 ft_tolower      : [OK] 
 ft_strchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strrchr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strncmp      : [FAILED] [FAILED] [OK] [OK] [OK] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] 
-[fail]: your strncmp does not work with basic input
-[fail]: your strncmp does not work with basic input
-[fail]: your strncmp does not work with zero length string
-[fail]: your strncmp does not work with basic input
-
+ft_strncmp      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_memcmp       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strnstr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_atoi         : [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-[fail]: your atoi is not working with non space invisible char
-
+ft_atoi         : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_calloc       : [OK] [OK] [OK] [OK] [OK] 
 ft_strdup       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_substr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] 
-[fail]: your substr does not work when start >= ft_strlen(s)
-
+ft_substr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_strjoin      : [OK] [OK] [OK] [OK] [OK] 
 ft_strtrim      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
 ft_split        : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
@@ -930,10 +840,7 @@ ft_striteri     : [OK] [OK]
 ft_putchar_fd   : [OK] [OK] 
 ft_putstr_fd    : [OK] [OK] 
 ft_putendl_fd   : [OK] [OK] 
-ft_putnbr_fd    : [OK] [OK] [FAILED] [OK] [FAILED] 
-[fail]: your putnbr_fd does not work with int min
-[fail]: your putnbr_fd allocate memory, wtf ???
-
+ft_putnbr_fd    : [OK] [OK] [OK] [OK] [OK] 
 ft_lstnew       : [OK] [OK] [OK] [OK] 
 ft_lstadd_front : [OK] [OK] [OK] 
 ft_lstsize      : [OK] [OK] 
@@ -943,63 +850,9 @@ ft_lstclear     : [OK] [OK] [OK]
 ft_lstiter      : [OK] 
 ft_lstmap       : [MISSING]
 
-[no crash]: your memcpy does not segv with NULL on first params
- Test code:
-        ft_memcpy(((void *)0), "segfaulter tu dois", 17);
- 
- 
- [no crash]: your memcpy does not segv with NULL on second params
- Test code:
-        ft_memcpy("            ", ((void *)0), 17);
- 
- 
- [fail]: your strncmp does not work with basic input
- Test code:
-        char *s1 = "the cake is a lie !\0I'm hidden lol\r\n";
-        char *s2 = "there is no stars in the sky";
-        size_t size = strlen("the cake is a lie !\0I'm hidden lol\r\n");
-        int i1 = ((strncmp(s1, s2, size) > 0) ? 1 : ((strncmp(s1, s2, size) < 0) ? -1 : 0));
-        int i2 = ((ft_strncmp(s1, s2, size) > 0) ? 1 : ((ft_strncmp(s1, s2, size) < 0) ? -1 : 0));
- 
-        if (i1 == i2)
-                exit(TEST_SUCCESS);
-        exit(TEST_FAILED);
- 
- Diffs:
-      strncmp: |-1|
-   ft_strncmp: |1|
- 
- [fail]: your strncmp does not work with basic input
- Test code:
-        char *s1 = "omg1||||||||||||||||";
-        char *s2 = "omg3";
-        size_t size = 4;
-        int i1 = ((strncmp(s1, s2, size) > 0) ? 1 : ((strncmp(s1, s2, size) < 0) ? -1 : 0));
-        int i2 = ((ft_strncmp(s1, s2, size) > 0) ? 1 : ((ft_strncmp(s1, s2, size) < 0) ? -1 : 0));
- 
-        if (i1 == i2)
-                exit(TEST_SUCCESS);
-        exit(TEST_FAILED);
- 
- Diffs:
-      strncmp: |-1|
-   ft_strncmp: |1|
- 
- [fail]: your strncmp does not work with zero length string
- Test code:
-        char *s1 = "";
-        char *s2 = "AAAAAA";
-        int i1 = ((strncmp(s1, s2, 6) > 0) ? 1 : ((strncmp(s1, s2, 6) < 0) ? -1 : 0));
-        int i2 = ((ft_strncmp(s1, s2, 6) > 0) ? 1 : ((ft_strncmp(s1, s2, 6) < 0) ? -1 : 0));
- 
-        if (i1 == i2)
-...
-
-File too large. To see full report open: /Users/iarslan/francinette/temp/libft/alelievr/result.log
-
 ✖ Compiling tests: fsoares (my own)
 duplicate symbol '_main' in:
-    /var/folders/zz/zyxvpxvq6csfxvn_n000cw4c003713/T/test_split-409fcc.o
+    /var/folders/zz/zyxvpxvq6csfxvn_n000cw4c003713/T/test_split-6ac09a.o
     ./libft.a(ft_split.o)
 ld: 1 duplicate symbol for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
@@ -1008,11 +861,8 @@ Problem compiling the tests
 
 Summary: 
 
-Norminette Errors: ft_memcpy.c
-
 Missing functions: lstadd_back
 
-Failed tests: memcpy, substr, lstmap, libftTester, atoi, strncmp, fsoares, putnbr_fd
+Failed tests: libftTester, fsoares, lstmap
 
-Passed tests: isalpha, isdigit, isalnum, isascii, isprint, strlen, memset, bzero, memmove, strlcpy, strlcat, toupper, tolower, strchr, strrchr, memchr, memcmp, strnstr, calloc, strdup, strjoin, strtrim, split, itoa, strmapi, striteri, putchar_fd, putstr_fd, putendl_fd, lstnew, lstadd_front, lstsize, lstlast, lstdelone, lstclear, lstiter
-iarslan@k1m21s05 src % 
+Passed tests: isalpha, isdigit, isalnum, isascii, isprint, strlen, memset, bzero, memcpy, memmove, strlcpy, strlcat, toupper, tolower, strchr, strrchr, strncmp, memchr, memcmp, strnstr, atoi, calloc, strdup, substr, strjoin, strtrim, split, itoa, strmapi, striteri, putchar_fd, putstr_fd, putendl_fd, putnbr_fd, lstnew, lstadd_front, lstsize, lstlast, lstdelone, lstclear, lstiter
