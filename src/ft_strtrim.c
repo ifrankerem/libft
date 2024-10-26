@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 22:39:41 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/26 16:32:06 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 23:27:14 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s1size = s1size - 1;
 	while (ft_find((char *)set, s1[s1size]) && s1size > i)
 		s1size--;
+	final = malloc(sizeof(char *) * s1size + 1);
 	final = ft_substr(s1, i, s1size - i + 1);
 	if (!final)
 		return (0);

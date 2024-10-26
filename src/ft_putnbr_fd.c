@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 23:11:09 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/26 18:50:01 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 23:15:25 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (number > 9)
 	{
-		ft_putnbr_fd(((int)number) / 10, fd);
-		ft_putnbr_fd(((int)number) % 10, fd);
+		ft_putnbr_fd((number) / 10, fd);
+		ft_putnbr_fd((number) % 10, fd);
 	}
 	else
 	{
