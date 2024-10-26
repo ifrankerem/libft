@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:19:09 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/16 00:53:57 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 16:32:34 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		f(i, &s[i]);
 		i++;
 	}
-}   
+}

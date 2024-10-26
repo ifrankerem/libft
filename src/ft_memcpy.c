@@ -6,12 +6,11 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 22:29:23 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/12 18:59:42 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 22:48:23 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -22,6 +21,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	source = (unsigned char *)src;
 	destination = (unsigned char *)dest;
+	if (!dest || !src)
+		return (NULL);
+	if (n == 0)
+		return (dest);
 	while (i < n)
 	{
 		destination[i] = source[i];

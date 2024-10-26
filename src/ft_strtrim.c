@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 22:39:41 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/16 00:54:24 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 16:32:06 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ static int	ft_find(char *set, char s1)
 	}
 	return (0);
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*final;

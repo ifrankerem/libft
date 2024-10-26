@@ -6,12 +6,11 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 19:18:42 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/12 19:18:43 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 22:00:33 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

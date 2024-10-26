@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iarslan <iarslan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:43:23 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/25 13:41:20 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 16:34:27 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,13 @@ static int	ft_wordcount(char const *x, char y)
 	}
 	return (flag);
 }
-static char *copy_word(const char *s, int start, int end)
-{
-	char *word;
-	int j;
-	j = 0;
 
+static char	*copy_word(const char *s, int start, int end)
+{
+	char	*word;
+	int		j;
+
+	j = 0;
 	word = malloc(sizeof(char) * (end - start + 1));
 	if (!word)
 		return (NULL);
@@ -43,11 +44,13 @@ static char *copy_word(const char *s, int start, int end)
 	return (word);
 }
 
-char **ft_copy(char const *s, char c)
+char	**ft_copy(char const *s, char c)
 {
-	char **final;
-	int i;
-	int k;
+	char	**final;
+	int		i;
+	int		k;
+	int		start;
+
 	i = 0;
 	k = 0;
 	final = malloc(sizeof(char *) * (ft_wordcount(s, c) + 1));
@@ -57,7 +60,7 @@ char **ft_copy(char const *s, char c)
 	{
 		if (s[i] != c)
 		{
-			int start = i;
+			start = i;
 			while (s[i] && s[i] != c)
 				i++;
 			final[k++] = copy_word(s, start, i);
@@ -68,21 +71,26 @@ char **ft_copy(char const *s, char c)
 	final[k] = NULL;
 	return (final);
 }
-char **ft_split(char const *s, char c)
+
+char	**ft_split(char const *s, char c)
 {
 	if (!s)
 		return (NULL);
 	return (ft_copy(s, c));
 }
-int main()
-{	
-	int i;
+
+int	main(void)
+{
+	int		i;
+	char	*x;
+	char	**y;
+
 	i = 0;
-	char *x = "42 turkiye naber";
-	char **y = ft_split(x,' ');
-	while(y[i])
+	x = "42 turkiye naber";
+	y = ft_split(x, ' ');
+	while (y[i])
 	{
-		printf("%s\n",y[i]);
+		printf("%s\n", y[i]);
 		i++;
 	}
 }

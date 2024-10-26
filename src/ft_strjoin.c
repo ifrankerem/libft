@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 22:23:16 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/16 00:54:07 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 16:32:18 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *final;
-	int i;
-	int j;
-	int s1size;
-	int s2size;
+	char	*final;
+	int		i;
+	int		j;
+	int		s1size;
+	int		s2size;
 
 	i = 0;
 	j = 0;

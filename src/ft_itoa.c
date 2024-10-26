@@ -6,12 +6,11 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:18:28 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/21 19:23:50 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 22:00:54 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	nbrlen(long x)
 {
@@ -27,6 +26,7 @@ static int	nbrlen(long x)
 	}
 	return (len);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*final;

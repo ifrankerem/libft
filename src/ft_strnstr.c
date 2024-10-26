@@ -6,10 +6,11 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 16:48:17 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/14 23:10:48 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 17:41:21 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 

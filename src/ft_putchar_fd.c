@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:39:46 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/15 21:46:26 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/26 16:33:14 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-    write(fd,&c,1);
+	write(fd, &c, 1);
 }
