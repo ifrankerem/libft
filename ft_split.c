@@ -6,74 +6,76 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:43:23 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/27 02:53:09 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/10/27 16:51:27 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_wordcount(char const *x, char y)
+static int	ft_wordcount(char const *s, char c)
 {
+	int	count;
 	int	i;
-	int	flag;
 
-	flag = 0;
 	i = 0;
-	while (x[i])
+	count = 0;
+	while (s[i])
 	{
-		if ((x[i] != y && x[i + 1] == y) || (x[i] != y && x[i + 1] == '\0'))
-			flag++;
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
+			count++;
 		i++;
 	}
-	return (flag);
+	return (count);
 }
 
-static char	*copy_word(const char *s, int start, int end)
+static char	*ft_wordalloc(char const *s, char c, int *i)
 {
 	char	*word;
+	int		len;
 	int		j;
 
-	j = 0;
-	word = malloc(sizeof(char) * (end - start + 1));
+	len = 0;
+	while (s[*i + len] && s[*i + len] != c)
+		len++;
+	word = (char *)malloc((len + 1) * sizeof(char));
 	if (!word)
 		return (NULL);
-	while (start < end)
-		word[j++] = s[start++];
+	j = 0;
+	while (j < len)
+		word[j++] = s[(*i)++];
 	word[j] = '\0';
 	return (word);
 }
 
-char	**ft_copy(char const *s, char c)
+static void	ft_freeall(char **arrays, int j)
 {
-	char	**final;
-	int		i;
-	int		k;
-	int		start;
-
-	i = 0;
-	k = 0;
-	final = malloc(sizeof(char *) * (ft_wordcount(s, c) + 1));
-	if (!final)
-		return (NULL);
-	while (s[i])
-	{
-		if (s[i] != c)
-		{
-			start = i;
-			while (s[i] && s[i] != c)
-				i++;
-			final[k++] = copy_word(s, start, i);
-		}
-		else
-			i++;
-	}
-	final[k] = NULL;
-	return (final);
+	while (j >= 0)
+		free(arrays[j--]);
+	free(arrays);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	if (!s)
+	char	**arrays;
+	int		i;
+	int		j;
+
+	arrays = (char **)malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
+	if (!s || !arrays)
 		return (NULL);
-	return (ft_copy(s, c));
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			arrays[j] = ft_wordalloc(s, c, &i);
+			if (!arrays[j++])
+				return (ft_freeall(arrays, j - 1), NULL);
+		}
+		else
+			i++;
+	}
+	arrays[j] = NULL;
+	return (arrays);
 }

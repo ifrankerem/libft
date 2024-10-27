@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MakeFile                                           :+:      :+:    :+:    #
+#    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/26 17:11:16 by iarslan           #+#    #+#              #
-#    Updated: 2024/10/26 17:26:29 by iarslan          ###   ########.fr        #
+#    Updated: 2024/10/27 18:27:52 by iarslan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_substr.c ft_tolower.c ft_toupper.c ft_itoa.c ft_putchar_fd.c ft_putendl_fd.c \
 		ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_strmapi.c ft_striteri.c
 
-SRCS_BONUS = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c ft_lstadd_front.c
+SRCS_BONUS = ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstclear_bonus.c ft_lstadd_front_bonus.c ft_lstmap_bonus.c \
+ft_lstadd_back_bonus.c
 
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
@@ -29,13 +30,13 @@ RM = rm -f
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+	ar -rc $(NAME) $(OBJS)
 
 .c.o : 
 	$(CC) -c $(FLAGS) $< -o $@
 
 bonus : $(OBJS) $(OBJS_BONUS)
-	ar -rcs $(NAME) $(OBJS) $(OBJS_BONUS)
+	ar -rc $(NAME) $(OBJS) $(OBJS_BONUS)
 
 clean : 
 	$(RM) $(OBJS) $(OBJS_BONUS)
