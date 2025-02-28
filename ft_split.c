@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 18:43:23 by iarslan           #+#    #+#             */
-/*   Updated: 2024/10/27 16:51:27 by iarslan          ###   ########.fr       */
+/*   Created: 2025/03/01 00:38:35 by iarslan           #+#    #+#             */
+/*   Updated: 2025/03/01 01:26:49 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,19 +49,29 @@ static char	*ft_wordalloc(char const *s, char c, int *i)
 
 static void	ft_freeall(char **arrays, int j)
 {
-	while (j >= 0)
-		free(arrays[j--]);
+	int	k;
+
+	k = 0;
+	if (!arrays)
+		return ;
+	while (k < j)
+	{
+		free(arrays[k]);
+		k++;
+	}
 	free(arrays);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**ft_getwords(char const *s, char c, int word_count)
 {
 	char	**arrays;
 	int		i;
 	int		j;
 
-	arrays = (char **)malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
-	if (!s || !arrays)
+	if (!s)
+		return (NULL);
+	arrays = (char **)malloc((word_count + 1) * sizeof(char *));
+	if (!arrays)
 		return (NULL);
 	i = 0;
 	j = 0;
@@ -70,12 +80,29 @@ char	**ft_split(char const *s, char c)
 		if (s[i] != c)
 		{
 			arrays[j] = ft_wordalloc(s, c, &i);
-			if (!arrays[j++])
+			if (!arrays[j])
 				return (ft_freeall(arrays, j - 1), NULL);
+			j++;
 		}
 		else
 			i++;
 	}
 	arrays[j] = NULL;
+	return (arrays);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arrays;
+	int		word_count;
+
+	if (!s)
+		return (NULL);
+	word_count = ft_wordcount(s, c);
+	if (word_count == 0)
+		return (NULL);
+	arrays = ft_getwords(s, c, word_count);
+	if (!arrays)
+		return (NULL);
 	return (arrays);
 }
