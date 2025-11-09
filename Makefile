@@ -6,7 +6,7 @@
 #    By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/26 17:11:16 by iarslan           #+#    #+#              #
-#    Updated: 2024/10/27 18:27:52 by iarslan          ###   ########.fr        #
+#    Updated: 2025/11/09 20:15:35 by iarslan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ ft_lstadd_back_bonus.c
 
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
-CC = gcc
+CC = cc
 FLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
